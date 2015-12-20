@@ -1,49 +1,5 @@
 package main
 
-//import (
-//    "fmt"
-//    "log"
-//    "os"
-
-//    "gopkg.in/mgo.v2"
-//)
-
-//func main() {
-//    var (
-//        mongoURL        = os.Getenv("mongo_url")
-//        mongoUser       = os.Getenv("mongo_user")
-//        mongoPassword   = os.Getenv("mongo_password")
-//        mongoCollection = os.Getenv("mongo_collection")
-//    )
-
-//    var (
-//            mongoSession *mgo.Session
-//            database     *mgo.Database
-//            collection   *mgo.Collection
-//            err          error
-//        )
-
-//    addr := fmt.Sprintf("mongodb://%s:%s@%s", mongoUser, mongoPassword, mongoURL)
-
-//    // Dial up the server and establish a session
-//    if mongoSession, err = mgo.Dial(addr); err != nil {
-//        log.Fatal(err)
-//    }
-
-//    // Make sure the connection closes
-//    defer mongoSession.Close()
-
-//    // This will get the "default" database that the connection string specified
-//    database = mongoSession.DB("")
-
-//    // Get our collection
-//    collection = database.C(mongoCollection)
-
-//    // For debuging, print out the collection we found
-//    fmt.Printf("Collection: %+v", collection)
-
-//    // Close main function
-
 import (
 	"fmt"
 	"log"
@@ -81,5 +37,49 @@ func main() {
 	}
 
 	fmt.Println("Phone:", result.Phone)
+
+	//import (
+	//    "fmt"
+	//    "log"
+	//    "os"
+
+	//    "gopkg.in/mgo.v2"
+	//)
+
+	//func main() {
+	//    var (
+	//        mongoURL        = os.Getenv("mongo_url")
+	//        mongoUser       = os.Getenv("mongo_user")
+	//        mongoPassword   = os.Getenv("mongo_password")
+	//        mongoCollection = os.Getenv("mongo_collection")
+	//    )
+
+	//    var (
+	//            mongoSession *mgo.Session
+	//            database     *mgo.Database
+	//            collection   *mgo.Collection
+	//            err          error
+	//        )
+
+	//    addr := fmt.Sprintf("mongodb://%s:%s@%s", mongoUser, mongoPassword, mongoURL)
+
+	//    // Dial up the server and establish a session
+	//    if mongoSession, err = mgo.Dial(addr); err != nil {
+	//        log.Fatal(err)
+	//    }
+
+	//    // Make sure the connection closes
+	//    defer mongoSession.Close()
+
+	//    // This will get the "default" database that the connection string specified
+	//    database = mongoSession.DB("")
+
+	//    // Get our collection
+	//    collection = database.C(mongoCollection)
+
+	//    // For debuging, print out the collection we found
+	//    fmt.Printf("Collection: %+v", collection)
+
+	//    // Close main function
 
 }
